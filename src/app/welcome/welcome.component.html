@@ -1,0 +1,57 @@
+<ngx-spinner></ngx-spinner>
+
+<div class="bg-video-wrap bg-video">
+    <video src="assets/images/bg.mp4" loop muted autoplay>
+    </video>
+    <div class="overlay">
+    </div>
+
+
+
+    <div class="main-div h-100">
+        <div class="container-fluid h-100">
+
+            <div class="row">
+                <div class="col-auto mr-auto">
+                   <div class="logo-bg">
+                        <h4 class="hello-heading">{{'TITLE.Hello' | translate }} !</h4>
+                        <p class="time-and-img">
+                            <img src="assets/images/unnamed.png"> 34C | {{date | date: 'shortTime'}}
+                        </p>
+                   </div>
+                </div>
+                <app-language></app-language>
+            </div>
+
+
+            <div class="row tb-lr-center">
+                <div class="col-auto mx-auto">
+                    <div class="logo-div">
+                        <img src="assets/images/MegaLogo.png">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row tb-lr-center2">
+                <div class="col-auto mx-auto">
+                    <div class="touch-to-start">
+                        <button class="btn btn-link" (click)="authorizationApi()">{{'TITLE.TOUCH_TO_START' | translate }}</button>
+                        <!-- <button class="btn btn-link">{{'TITLE.TOUCH_TO_START' | translate }}</button> -->
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+

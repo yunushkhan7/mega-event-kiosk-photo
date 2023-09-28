@@ -1,0 +1,39 @@
+<div class="bg-video-wrap">
+  <img class="all-page-bg" src="assets/images/bg-all-page.jpg" />
+  <div class="overlay"></div>
+
+  <div class="main-div">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto mr-auto">
+          <div class="logo-bg">
+            <img (click)="navigateTo()" src="assets/images/MegaLogo.png" />
+          </div>
+        </div>
+        <app-language></app-language>
+      </div>
+
+      <div class="row top-heading-1">
+        <div class="col-auto mx-auto">
+          <h2 class="whattodo">{{'TITLE.WHAT_NEXT' | translate }} ?</h2>
+        </div>
+      </div>
+
+      <div class="row getmyphotosbtn-mt">
+        <div class="width-50 mx-auto">
+          <button (click)="goTo()" type="button" class="btn btn-big-blue btn-block">
+            <img src="assets/images/selfie.png" width="50px"> {{'TITLE.GET_MY_PHOTOS' | translate }}
+          </button>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="col-auto mx-auto mt-5">
+          <button (click)="goToValidateWristband()" type="button"  class="btn btn-big-blue btn-block" >
+            <img src="assets/images/validatewristband.png" width="50px"> {{'VALIDATE.VALIDATE_WRISTBAND' | translate }}
+          </button>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

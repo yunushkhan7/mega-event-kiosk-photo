@@ -1,0 +1,32 @@
+<div class="bg-video-wrap">
+  <img class="all-page-bg" src="assets/images/bg-all-page.jpg" />
+  <div class="overlay"></div>
+
+  <div class="main-div">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto mr-auto">
+          <div class="logo-bg">
+            <img (click)="navigateTo()" src="assets/images/MegaLogo.png" />
+          </div>
+        </div>
+        <app-language></app-language>
+      </div>
+      <div class="row">
+        <div class="col mx-auto mt-5 text-center">
+          <div class="popup popup2 mx-auto">
+            <h2 class="whattodo">{{ "TITLE.PAY-SUCC" | translate }}</h2>
+            <p class="heading3">SGD ${{totalAmt}}</p>
+
+            <img class="img-fluid paymentsuccess-img" src="assets/images/paymentsuccess.gif" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

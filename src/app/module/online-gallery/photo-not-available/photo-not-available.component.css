@@ -1,0 +1,39 @@
+.photo-not-avialable{
+background-color: #6ace7c;
+
+}
+
+.popup {
+    width: 100%;
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
+    text-align: left;
+}
+
+.image-and-logo{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+}
+
+.heading-1 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 27px;
+    margin: 0 0 0px;
+}
+
+.heading2 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.line{
+    background-color: #5f4b8b;   
+    height: 4px;
+    width: 86%;
+    margin: 10px 0px 15px;
+
+}

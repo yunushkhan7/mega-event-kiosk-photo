@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+  }
+
+  .all-page-bg{
+    height: 100%;
+    width: 100%;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #26262633;
+    /* background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%); */
+    background-size: 3px 3px;
+    z-index: 2;
+  }
+
+  .btn .focus, .btn:focus {
+    box-shadow: none;
+}
+   
+
+
+  .logo-bg{
+    background-color: #40c7f4;
+    background: url("src/assets/images/top-logo-bg.png") no-repeat center center/cover;
+    width: 300px;
+    height: 116px;
+    padding: 1px;
+    margin-top: 20px;
+  }
+
+  .logo-bg img{
+    width: 145px;
+    padding: 7px;
+    margin-left: 74px;
+  }
+
+  .hello-heading{
+    font-size: 16px;
+    color: #000;
+    margin-left: 50px;
+    margin-top: 16px;
+    text-shadow: 1px 1px #ffffff;
+    font-weight: 500;
+  }
+
+  .time-and-img{
+    margin-left: 33px;
+  }
+  .time-and-img img{
+    width: 35px;
+  }
+
+  .btn-secondary {
+    margin-top: 12px;
+    color: #000;
+    background-color: #40c7f4;
+    border-color: #40c7f4;
+}
+
+.btn-secondary i{
+color: red;
+}
+
+.dropdown-menu {
+    min-width: auto;
+}
+
+.dropdown-item:hover{
+    background-color: #40c7f4;
+}
+
+.whattodo{
+    color: #fff;
+    font-weight: 700 !important;
+    font-size: 9vw !important;
+}
+
+.top-heading-1{
+  margin-top: 14vw;
+}
+
+.getmyphotosbtn-mt{
+  margin-top: 18vw;
+}
+
+.btn-big-blue {
+    color: #fff;
+    background-color: #40c7f4;
+    border-color: #40c7f4;
+    font-size: 4vw;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 35px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 25px;
+    text-align: left;
+}
+
+.btn-big-blue img{
+  width: 115px;
+}
+
+.btn-big-blue i{
+    font-size: 50px;
+}
+
+
+
+
+/* --- 150% ----- */
+@media (max-width:768px){
+  .btn-big-blue {
+    font-size: 6vw;
+  }
+}
+
+
+
+/* --- 125% ----- */
+@media (min-width:768px) and  (max-width:991px){
+
+}
+
+
+/* --- 100% ----- */
+@media (min-width:992px){
+
+}

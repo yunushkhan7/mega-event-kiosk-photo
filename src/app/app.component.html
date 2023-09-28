@@ -1,0 +1,6 @@
+<div  [ngClass]="[ isKeyBoardActive ? 'scroll-sec' : '']">
+    <router-outlet></router-outlet>
+    </div>
+    <app-keyboard (isClassActive)="isClassActive($event)"></app-keyboard>
+
+

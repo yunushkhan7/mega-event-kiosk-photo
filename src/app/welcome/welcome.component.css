@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.bg-video video {
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #26262633;
+  /* background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%); */
+  background-size: 3px 3px;
+  z-index: 2;
+}
+
+
+.logo-bg {
+  background-color: #40c7f4;
+  background: url("src/assets/images/logo-bg2.png") no-repeat center center/cover;
+  width: 410px;
+    padding: 12px;
+    background-size: 100%;
+    top: 7px;
+    position: relative;
+    min-height: 151px;
+
+}
+
+.hello-heading {
+  font-size: 30px;
+  color: #000;
+  margin-left: 100px;
+  margin-top: 29px;
+  text-shadow: 1px 1px #ffffff;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.time-and-img {
+  margin-left: 33px;
+  margin-bottom: 0;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.time-and-img img {
+  width: 50px;
+}
+
+.btn-secondary {
+  margin-top: 12px;
+  color: #000;
+  background-color: #40c7f4;
+  border-color: #40c7f4;
+}
+
+.btn-secondary i {
+  color: red;
+}
+
+.dropdown-menu {
+  min-width: auto;
+}
+
+.dropdown-item:hover {
+  background-color: #40c7f4;
+}
+
+
+
+
+.logo-div {
+  background-color: #40c7f4;
+  background: url("src/assets/images/logo-bg3.png") no-repeat center center/cover;
+  width: 510px;
+  height: 543px;
+  padding: 1px;
+  background-size: 100%;
+  margin-top: 63px;
+}
+
+.logo-div img {
+  width: 58%;
+  padding: 10px;
+  position: relative;
+  top: 145px;
+  left: 140px;
+}
+
+.touch-to-start {
+  background-color: #40c7f4;
+  background: url("src/assets/images/TouchToStart.png") no-repeat center center/cover;
+  width: 520px;
+    height: 213px;
+    padding: 1px;
+    background-size: 100%;
+    margin-top: 22px;
+    text-align: center;
+}
+
+.touch-to-start button {
+  font-size: 35px;
+  color: #000;
+  margin-left: 14px;
+  padding: 27px;
+  text-shadow: 1px 1px #ffffff;
+  font-weight: 700;
+  margin-top: 47px;
+}
+
+
+.tb-lr-center{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.tb-lr-center2{
+  position: absolute;
+    bottom: 0%;
+    left: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+}

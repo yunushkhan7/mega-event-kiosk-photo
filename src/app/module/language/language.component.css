@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  video {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+  }
+
+  .all-page-bg{
+    height: 100%;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #26262633;
+    /* background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%); */
+    background-size: 3px 3px;
+    z-index: 2;
+  }
+
+  .btn .focus, .btn:focus {
+    box-shadow: none;
+}
+  .main-div{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 3;
+    max-width: 400px;
+    width: 100%;
+    /* background-color: rgba(127, 255, 212, 0.379); */
+  }
+
+  .logo-bg{
+    background-color: #40c7f4;
+    background: url("src/assets/images/top-logo-bg.png") no-repeat center center/cover;
+    width: 185px;
+    padding: 1px;
+    margin-top: 12px;
+  }
+
+  .logo-bg img{
+    width: 100px;
+    padding: 7px;
+    margin-left: 44px;
+  }
+
+  .hello-heading{
+    font-size: 16px;
+    color: #000;
+    margin-left: 50px;
+    margin-top: 16px;
+    text-shadow: 1px 1px #ffffff;
+    font-weight: 500;
+  }
+
+  .time-and-img{
+    margin-left: 33px;
+  }
+  .time-and-img img{
+    width: 35px;
+  }
+
+  .btn-secondary {
+    margin-top: 12px;
+    color: #000;
+    background-color: #40c7f4;
+    border-color: #40c7f4;
+}
+
+.btn-secondary i{
+color: red;
+}
+
+.dropdown-menu {
+    min-width: auto;
+}
+
+.dropdown-item:hover{
+    background-color: #40c7f4;
+}
+
+.whattodo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.btn-big-blue {
+    color: #fff;
+    background-color: #40c7f4;
+    border-color: #40c7f4;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 15px;
+    padding: 25px;
+    width: 255px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-big-blue i{
+    font-size: 50px;
+}
+
+
+
+/* .select-opt img{
+  position: absolute;
+  z-index: 2;
+  top: 6px;
+  left: 30px;
+} */
+
+.select-opt ::ng-deep .mat-mdc-text-field-wrapper {
+  background-color: #40c7f4;
+  width: 90px;
+  padding: 0px 8px;
+}
+
+.select-opt ::ng-deep .mdc-text-field{
+border-radius: 10px;
+border: none !important;
+}
+
+::ng-deep .mat-mdc-option{
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+  min-height: 38px !important;
+}
+
+.select-opt ::ng-deep .mat-mdc-select-value {
+  display: none;
+}
+
+.select-opt ::ng-deep .mat-mdc-select-arrow-wrapper{
+  margin-top: 11px;
+}
+
+.select-opt ::ng-deep .mat-mdc-select-trigger {
+  justify-content: flex-end;
+}
+
+.select-opt ::ng-deep .mat-mdc-form-field-infix {
+  min-height: auto;
+}
+
+
+.select-opt ::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+}
+
+::ng-deep .mdc-menu-surface.mat-mdc-select-panel{
+  position: absolute !important;
+  right: 0px !important;
+  width: 115px !important;
+}
+
+
+.select-opt ::ng-deep .mat-mdc-option:hover:not(.mdc-list-item--disabled), .mat-mdc-option:focus:not(.mdc-list-item--disabled), .mat-mdc-option.mat-mdc-option-active, .mat-mdc-option.mdc-list-item--selected:not(.mat-mdc-option-multiple):not(.mdc-list-item--disabled) {
+  background-color: #40c7f4;
+}
+
+.m-top{
+  margin-top: 26px !important;
+}

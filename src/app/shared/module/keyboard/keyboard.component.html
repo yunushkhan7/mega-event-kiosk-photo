@@ -1,0 +1,97 @@
+
+<ng-container *ngIf="inputType =='num'">
+    <div>
+      <span><button appKeyboardKey="7"></button></span>
+      <span><button appKeyboardKey="8"></button></span>
+      <span><button appKeyboardKey="9"></button></span>
+    </div>
+
+    <div>
+      <span><button appKeyboardKey="4"></button></span>
+      <span><button appKeyboardKey="5"></button></span>
+      <span><button appKeyboardKey="6"></button></span>
+    </div>
+
+    <div>
+      <span><button appKeyboardKey="1"></button></span>
+      <span><button appKeyboardKey="2"></button></span>
+      <span><button appKeyboardKey="3"></button></span>
+    </div>
+
+    <div>
+      <span><button class="special" (click)="onBackspace()">X</button></span>
+      <span><button>+</button></span>
+      <span><button appKeyboardKey="0"></button></span>
+      <span class="wide"><button (click)="onEnter()">Enter</button></span>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="inputType!='num'">
+  <div>
+    <span><button type="submit" appKeyboardKey="1 ["></button></span>
+    <span><button appKeyboardKey="2 ]"></button></span>
+   <span> <button appKeyboardKey="3 {"></button></span>
+   <span> <button appKeyboardKey="4 }"></button></span>
+   <span> <button appKeyboardKey="5 #"></button></span>
+   <span> <button appKeyboardKey="6 %"></button></span>
+   <span> <button appKeyboardKey="7 ^"></button></span>
+   <span> <button appKeyboardKey="8 *"></button></span>
+   <span> <button appKeyboardKey="9 +"></button></span>
+   <span> <button appKeyboardKey="0 ="></button></span>
+  </div>
+  <hr class="hr">
+
+  <div>
+  <span>  <button appKeyboardKey="q 1 ["></button> </span>
+  <span>  <button appKeyboardKey="w 2 ]"></button> </span>
+  <span>  <button appKeyboardKey="e 3 {"></button> </span>
+  <span>  <button appKeyboardKey="r 4 }"></button> </span>
+  <span>  <button appKeyboardKey="t 5 #" class="special-bg-color"></button> </span>
+  <span>  <button appKeyboardKey="y 6 %"></button> </span>
+  <span>  <button appKeyboardKey="u 7 ^"></button> </span>
+  <span>  <button appKeyboardKey="i 8 *"></button> </span>
+  <span>  <button appKeyboardKey="o 9 +"></button> </span>
+  <span>  <button appKeyboardKey="p 0 ="></button> </span>
+  <span>  <button appKeyboardKey="- 0 ="></button> </span>
+  <span>  <button appKeyboardKey="+ 0 ="></button> </span>
+  </div>
+  <div>
+  <span>  <button appKeyboardKey="a - _"></button> </span>
+  <span>  <button appKeyboardKey="s / \" class="special-bg-color"></button> </span>
+  <span>  <button appKeyboardKey="d : |"></button> </span>
+  <span>  <button appKeyboardKey="f ; ~" class="special-bg-color"></button> </span>
+  <span>  <button appKeyboardKey="g ( &lt;" class="special-bg-color"></button> </span>
+  <span>  <button appKeyboardKey="h ) &gt;"></button> </span>
+  <span>  <button appKeyboardKey="j $ &euro;"></button> </span>
+  <span>  <button appKeyboardKey="k & &pound;"></button> </span>
+  <span>  <button appKeyboardKey="l @ &yen;"></button> </span>
+  <span>  <button appKeyboardKey="_ . ."></button> </span>
+  <span class="special wide"> <button  (click)="onBackspace()">Delete</button> </span>
+  </div>
+  <div>
+    <!-- <button class="special wide" (click)="onShift()" [class.toggled]="keyboard.shift">Shift</button> -->
+  <span class="special wide"> <button  (click)="onShift()" [class.toggled]="keyboard.shift">Caps</button> </span>
+    <span class="wide"><button appKeyboardKey=".com"></button> </span>
+    <span><button appKeyboardKey="@"></button> </span>
+    <span><button appKeyboardKey="z &quot; &quot;"></button> </span>
+    <span><button appKeyboardKey="x . ."></button> </span>
+    <span><button appKeyboardKey="c , ,"></button> </span>
+    <span><button appKeyboardKey="v ? ?"></button> </span>
+    <span><button appKeyboardKey="b ! !"></button> </span>
+    <span><button appKeyboardKey="n ' '"></button> </span>
+    <span><button appKeyboardKey="m ` `" class="special-bg-color"></button> </span>
+    <span><button appKeyboardKey=". . ."></button> </span>
+    <span class="special wide"><button (click)="onEnter()">Enter</button> </span>
+  </div>
+  <div>
+    <span class="spacebar"><button appKeyboardKey="&nbsp; &nbsp; &nbsp;"></button> </span>
+    <span class="special wide"><button  (click)="onClear()">Clear</button></span>
+  </div>
+</ng-container>
+
+
+
+
+
+
+

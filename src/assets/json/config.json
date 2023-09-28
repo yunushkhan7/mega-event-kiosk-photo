@@ -1,0 +1,9 @@
+{
+  "ApiKey":{
+    "ApiKey" : "https://aszhostserver.ddns.net/MegaEvent/api/"
+  },
+   "loginDetails":{
+    "userName": "Krishna",
+    "password": "Krishna@123"
+  }
+}

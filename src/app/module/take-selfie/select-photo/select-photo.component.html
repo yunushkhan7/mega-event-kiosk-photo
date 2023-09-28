@@ -1,0 +1,164 @@
+<ngx-spinner></ngx-spinner>
+
+<div class="bg-video-wrap">
+  <img class="all-page-bg" src="assets/images/bg-all-page.jpg" />
+  <div class="overlay"></div>
+
+  <div class="main-div">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto mr-auto">
+          <div class="logo-bg">
+            <img (click)="navigateTo()" src="assets/images/MegaLogo.png" />
+          </div>
+        </div>
+        <app-language></app-language>
+      </div>
+
+      <div class="row" *ngIf="selectPhoto; else confirm">
+        <div class="col mx-auto mt-2 text-center">
+          <h1 class="selphoto">{{ "TITLE.SYP" | translate }}</h1>
+
+          <div class="row">
+            <div class="col mx-auto mt-1 text-center">
+            <div class="popup mx-auto">
+              <div class="img-div">
+
+               <div class="img-all" *ngFor="let imgs of clickedPics;let i = index">
+                <div (click)="addData(imgs)" >
+
+                    <img class="checknotselected" [ngClass]="{'img-check': imgs.isSelected}" src="assets/images/check-img.png" width="35"/>
+                <!-- <img class="img-photo" [src]="imgs.imageContent" /> -->
+                <img class="img-photo" [src]="imgs.imageContent" />
+              </div>
+
+               </div>
+
+              </div>
+            </div>
+
+            <div *ngIf="selected.length > 0" class="selected-img">
+
+              <div class="selected-img-div" *ngFor="let d of selected;let i = index">
+                <img class="img-close" src="assets/images/icon1.png" (click)="addData(d)"/>
+                <img class="img-photo-selected" [src]="d.imageContent" />
+               </div>
+
+
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+          </div>
+          <div class="text-right button-div-bg">
+            <button
+              type="button"
+              (click)="goToDashboard()"
+              class="btn btn-cancel mr-3"
+            >
+              {{ "TITLE.CANCEL" | translate }}
+            </button>
+
+            <button
+              type="button"
+              (click)="continueToConfirm()"
+              class="btn btn-info" [disabled]="selected.length == 0"
+            >
+              {{ "TITLE.CONTINUE" | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #confirm>
+        <div class="row">
+          <div class="col mx-auto mt-2 text-center">
+            <h1 class="selphoto">{{ "TITLE.CONFIRM-Y-PHOTO" | translate }}</h1>
+            <div class="row">
+
+
+
+              <div class="col mx-auto mt-1 text-center">
+                <div class="popup-photo mx-auto">
+                  <table class="table mb-0">
+                    <thead class="thead-blue">
+                      <tr>
+                        <th scope="col" colspan="2">{{ "TITLE.Digital_Copy" | translate }}<br/>S${{digialPrice}}
+                          </th>
+                        <th scope="col" colspan="2">{{ "TITLE.Printed_Copy" | translate }}<br/>S${{photoPrice}}
+                          </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr  *ngFor="let dw of showSelectedPics;let i = index">
+                        <td class="img-table"> <img class="img-photo-selected" [src]="dw.imageContent" /></td>
+                        <td>
+                          <input type="checkbox" class="input-size" id="exampleCheck1" [checked]="dw.digitalSelected" (click)="addDigital(dw)"/>
+                        </td>
+                        <td><input type="checkbox" class="input-size" id="exampleCheck2" [checked]="dw.photoSelected" (click)="addPhoto(dw)"/></td>
+                        <td class="w60">
+                          <button type="button" class="btn btn-light">
+                            <img class="img-delete" src="assets/images/delete.png" (click)="removeSelected(dw)"/>
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+
+                    <tfoot>
+                      <tr>
+                        <td colspan="4" class="p-0">
+                          <div class="bookingcode">
+                            {{ "TITLE.TOTAL" | translate }} {{totalAmt}}
+                          </div>
+                        </td>
+                    </tfoot>
+                  </table>
+
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+            <div class="back-next-btn">
+              <button
+                type="button"
+                (click)="goToDashboard()"
+                class="btn btn-cancel"
+              >
+                {{ "TITLE.CANCEL" | translate }}
+              </button>
+              <button
+                type="button"
+                (click)="goToselectPhoto()"
+                class="btn btn-outline-white"
+              >
+                {{ "TITLE.BACK" | translate }}
+              </button>
+              <button
+                type="button" [disabled]="digitalCount == 0 && photoCount == 0"
+                (click)="goToEmail()"
+                class="btn btn-info"
+              >
+                {{ "TITLE.CONTINUE" | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,88 @@
+<ngx-spinner></ngx-spinner>
+<div class="bg-video-wrap">
+  <img class="all-page-bg" src="assets/images/bg-all-page.jpg" />
+  <div class="overlay"></div>
+
+  <div class="main-div h-100">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto mr-auto">
+          <div class="logo-bg">
+            <img (click)="navigateTo()" src="assets/images/MegaLogo.png" />
+          </div>
+        </div>
+        <app-language></app-language>
+      </div>
+      <div class="row tb-lr-center" *ngIf="paymentMethod; else paymentComplete">
+        <div class="col mx-auto mt-5 text-center">
+          <div class="popup mx-auto">
+            <h2 class="whattodo">{{ "TITLE.CONFIRM_PAC" | translate }}</h2>
+            <p class="heading2 hed3">{{ "TITLE.SELECTP" | translate }}</p>
+            <img class="img-fluid paymentsuccess-img" src="assets/images/tap-to-scan.png" />
+
+            <!-- <div class="four-box">
+
+              <button (click)="goToCompletePayment()" type="button" class="btn">
+                <img class="img-fluid" src="assets/images/bank-1.png" />
+                {{ "TITLE.NETS" | translate }}
+              </button>
+
+              <button (click)="goToCompletePayment()" type="button" class="btn">
+                <img class="img-fluid" src="assets/images/bank-2.png" />
+                {{ "TITLE.EZLINK" | translate }}
+              </button>
+
+              <button (click)="goToCompletePayment()" type="button" class="btn">
+                <img class="img-fluid" src="assets/images/bank-3.png" />
+                {{ "TITLE.VISA" | translate }}
+              </button>
+
+              <button (click)="goToCompletePayment()" type="button" class="btn">
+                <img class="img-fluid" src="assets/images/bank-4.png" />
+                {{ "TITLE.AMEX" | translate }}
+              </button>
+            </div> -->
+
+            <div class="">
+              <!-- <button
+                (click)="goToselectPhoto()"
+                type="button"
+                class="btn btn-outline-info"
+              >
+                {{ "TITLE.BACK" | translate }}
+              </button> -->
+            </div>
+            <button
+            (click)="goToDashboard()"
+            type="button"
+            class="btn btn-cancel  btn-center-cancel mx-auto"
+          >
+            {{ "TITLE.CANCEL" | translate }}
+          </button>
+          </div>
+          
+        </div>
+      </div>
+
+      <ng-template #paymentComplete>
+        <div class="row">
+          <div class="col mx-auto mt-5 text-center">
+            <div class="popup mx-auto">
+              <h2 class="whattodo">{{ "TITLE.COMPLETE-PAY" | translate }}</h2>
+              <p class="heading2">{{ "TITLE.PLEASEFOLLOW" | translate }}</p>
+
+              <img class="img-fluid" src="assets/images/Complete_payment.gif" />
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

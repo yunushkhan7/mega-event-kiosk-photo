@@ -1,0 +1,41 @@
+.overlay {
+    background-color: #262626bd;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.popup {
+    width: 95%;
+    padding: 25px 13px;
+    background-color: #fff;
+    text-align: left;
+    min-height: auto;
+}
+
+.custom-checkbox label{
+    color: #40c7f4;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+.text-overflow{
+    height: 150px;
+    overflow-y: scroll;
+    margin-bottom: 18px;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0rem;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #40c7f4;
+}
+
+
+.custom-control-label::before {
+    background-color: #dee2e600;
+    border: 1px solid;
+}

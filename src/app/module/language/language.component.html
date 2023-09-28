@@ -1,0 +1,32 @@
+<!-- <div class="col-auto">
+  <div class="dropdown">
+    <select
+      class="form-control btn btn-secondary dropdown-toggle btn-sm"
+      #selectedLang
+      (change)="switchLang(selectedLang.value)"
+    >
+      <option
+        *ngFor="let language of translate.getLangs()"
+        [value]="language"
+        [selected]="language === translate.currentLang"
+      >
+      <img src="assets/images/{{language}}.svg" />  {{ language }}
+      </option>
+    </select>
+  </div> -->
+
+
+  <div class="col-auto select-opt mt-3 m-top">
+    
+  <mat-form-field appearance="outline">
+    <img src="assets/images/{{activeLang}}.svg" (selectionChange)="onLanguageChange()" width="50px"/>
+    <!-- <mat-label></mat-label> -->
+    <mat-select disableRipple [(ngModel)]="activeLang" (selectionChange)="onLanguageChange()">
+      <mat-option *ngFor="let language of language"
+      [value]="language?.code"
+      >
+      <img src="assets/images/{{language?.code}}.svg" width="30px" />  {{language?.value}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>

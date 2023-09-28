@@ -1,0 +1,15 @@
+.scroll-sec{
+    height: calc(100vh - 360px);
+    overflow-y: auto;
+}
+
+.scroll-sec::-webkit-scrollbar {
+    width: 0px;
+  }
+
+
+  @media (max-width:767px) {
+    .scroll-sec{
+        height: calc(100vh - 210px);
+    }
+  }

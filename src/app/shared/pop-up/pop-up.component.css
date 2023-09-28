@@ -1,0 +1,166 @@
+.btn-info {
+  padding: 0.375rem 0.5rem;
+}
+
+/* Check in now ? */
+.btn-padding {
+  padding: 0.375rem 0.7rem;
+}
+
+/* Something went wrong */
+.top-heading {
+  margin-bottom: 4px;
+  font-size: 24px;
+}
+
+.color {
+  color: black;
+}
+
+
+
+::ng-deep .popupclass1 .mat-mdc-dialog-container {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 1px 5px #6f6f6ffc;
+  text-align: center;
+  /* min-height: 600px; */
+}
+
+
+::ng-deep .popupclass1 .mat-mdc-dialog-container .mdc-dialog__surface {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+
+::ng-deep .popupclass2 .mat-mdc-dialog-container {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 1px 5px #6f6f6ffc;
+  text-align: center;
+  min-height: 600px;
+}
+
+
+::ng-deep .popupclass2 .mat-mdc-dialog-container .mdc-dialog__surface {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+::ng-deep .popupclass3 .mat-mdc-dialog-container {
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 1px 5px #6f6f6ffc;
+  text-align: center;
+  min-height: 600px;
+}
+
+
+::ng-deep .popupclass3 .mat-mdc-dialog-container .mdc-dialog__surface {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+
+
+
+
+.whattodo {
+  font-size: 5vw !important;
+  margin-bottom: 6vw !important;
+    margin-top: 2vw;
+}
+
+
+.content-text {
+  font-size: 29px;
+  line-height: 40px;
+  margin-bottom: 42px;
+}
+
+
+.timer-num{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 98px;
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 50px;
+  font-size: 22px;
+}
+
+
+
+
+
+
+/* --- 150% ----- */
+@media (max-width:768px) {
+  .whattodo {
+    margin-bottom: 6vw !important;
+    margin-top: 2vw;
+  }
+
+  .width-50 {
+    width: 68%;
+  }
+}
+
+
+
+/* --- 125% ----- */
+@media (min-width:768px) and (max-width:991px) {}
+
+
+/* --- 100% ----- */
+@media (min-width:992px) {
+
+  ::ng-deep .popupclass1 .mat-mdc-dialog-container {
+    min-height: 920px;
+  }
+
+  .content-text {
+    font-size: 50px;
+    line-height: 65px;
+    margin-bottom: 42px;
+    margin-top: 80px !important;
+  }
+
+
+  /* .timer-num{
+    width: 90px;
+    height: 90px;
+    line-height: 81px;
+    font-size: 25px;
+} */
+
+}
+
+
+.spinner-container {
+  position: relative;
+}
+.spinner-background {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  /* line-height: 80px; */
+  text-align: center;
+  overflow: hidden;
+  border-color: rgba(37, 242, 37, 0.12);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0px;
+}
+
+::ng-deep.mat-mdc-progress-spinner {
+  --mdc-circular-progress-active-indicator-color: rgba(10, 112, 10, 0.12);
+}
+
+

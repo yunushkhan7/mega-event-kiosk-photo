@@ -1,0 +1,60 @@
+<ngx-spinner></ngx-spinner>
+
+<div class="bg-video-wrap disableClick" (click)="call()">
+  <img class="all-page-bg" src="assets/images/bg-all-page.jpg" />
+  <div class="overlay"></div>
+
+  <div class="main-div">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto mr-auto">
+          <div class="logo-bg">
+            <img (click)="navigateTo()" src="assets/images/MegaLogo.png" />
+          </div>
+        </div>
+        <app-language></app-language>
+      </div>
+      <div
+        class="col mx-auto mt-5 text-center"
+        *ngIf="scanWristband; else success"
+      >
+      <!-- style="opacity: 0;" -->
+<div class="mb-3">
+  <!-- <input class="input-style" #scanId type="text" [(ngModel)]="scanText" (keyup)="fetchCode()" placeholder="Enter Code" autofocus> -->
+  <input class="input-style" #clickedAutoFocus type="text" [(ngModel)]="scanText" placeholder="" myAutofocus>
+  <!-- <button class="btn btn-secondary ml-3" (click)="getImgs()">Go</button> -->
+</div>
+        <div class="popup mx-auto">
+          <h2 class="whattodo">{{ "TITLE.RFIDTAG" | translate }}</h2>
+
+          <img
+            class="img-fluid main-img-w"
+
+            src="assets/images/RFID-tag.png"
+          />
+          <p class="heading2">{{ "TITLE.RFIDTAGTEXT" | translate }}</p>
+          <div class="mt-5">
+            <button type="button" (click)="goToDashboard()" class="btn btn-outline-info">
+              {{ "TITLE.BACK" | translate }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ng-template #success>
+        <div class="row">
+          <div class="col mx-auto mt-5 text-center">
+            <div class="popup mx-auto">
+              <h2 class="whattodo">{{ "TITLE.YOURGOOD" | translate }}</h2>
+              <p class="heading2">{{ "TITLE.YOUWRIST" | translate }}</p>
+              <img class="img-fluid" src="assets/images/youregood.gif" />
+              <p class="scanner-text">
+                {{ "TITLE.STRAPYOUR" | translate }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,160 @@
+:host {
+    text-align: center;
+    background-color: #e5e5e5;
+    position: fixed;
+    height: 46vw;
+    bottom: -46vw;
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+    transition: all 250ms ease-in-out;
+    z-index: 5;
+    overflow: auto;
+  }
+
+
+
+
+  :host::-webkit-scrollbar {
+    width: 0px;
+  }
+  .number-section{
+    text-align: center;
+    background-color: #eee;
+    position: fixed;
+    height: 370px;
+    width: 100%;
+    left: 0;
+    bottom: -370px;
+    padding: 20px 0;
+    transition: all 250ms ease-in-out;
+    border-radius: 40px 40px  0px 0px;
+  }
+
+  :host(.shown) {
+    bottom: 0;
+  }
+
+  span{
+    width: 5%;
+    height: 5vw;
+    margin: 8px 8px;
+    vertical-align: top;
+    user-select: none;
+    /* border: 1px solid transparent; */
+    border-radius: 6px;
+    background-color: #fafafa;
+    -webkit-box-shadow: 0 6px 1px -1px #ced4da;
+    -moz-box-shadow: 0 6px 1px -1px #ced4da;
+         box-shadow: 0 6px 1px -1px #ced4da;
+         display: inline-flex;
+      justify-content: center;
+  }
+
+
+  button {
+    width: 100%;
+    height: 100%;
+    /* margin: 8px 8px; */
+    /* vertical-align: top; */
+    user-select: none;
+    /* background-image: none; */
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background-color: #fdfdfd;
+    color: #636363;
+    font-family: sans-serif,sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+      /* -webkit-box-shadow: 1px 1px 8px #ced4da;
+         -moz-box-shadow: 1px 1px 8px #ced4da;
+              box-shadow: 1px 1px 8px #ced4da; */
+              position: relative;
+              display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  button:active {
+    background-color: #ccc;
+  }
+
+  button.special {
+    width: 60px;
+    /* background-color: #ccc; */
+  }
+
+  button.special {
+    font-size: 20px;
+  }
+
+  button.special:active {
+    background-color: #999;
+  }
+
+  button.toggled {
+    background-color: #555;
+    color: #ffffff;
+  }
+
+  .wide {
+    width: 80px;
+  }
+  .wide button{
+    width: 95px;
+  }
+  .spacebar {
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+  }
+  .spacebar button{
+    width: 95%;
+  }
+    .hr{
+      height: 1px;
+      background-color: #ced4da;
+      border: none;
+  }
+
+  .keyboard_hide{
+    width: 45px;
+  height: 35px;
+  }
+
+  /* .special-bg-color{
+    background-color: #aff0ff;
+  } */
+
+
+/* --- 150% ----- */
+@media (max-width:768px){
+  :host {
+    height: 40vw;
+    bottom: -40vw;
+  }
+  span{
+    width: 4%;
+    height: 4vw;
+    margin: 5px 8px;
+  }
+
+}
+
+
+
+/* --- 125% ----- */
+@media (min-width:768px) and  (max-width:991px){
+
+}
+
+
+/* --- 100% ----- */
+@media (min-width:992px){
+.back-next-btn{
+    margin-top: 14vw;
+}
+
+}

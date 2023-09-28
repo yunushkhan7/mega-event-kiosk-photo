@@ -1,0 +1,50 @@
+<div class="bg-video-wrap">
+  <img class="all-page-bg" src="assets/images/bg-all-page.jpg" />
+  <div class="overlay"></div>
+
+  <div class="main-div">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto mr-auto">
+          <div class="logo-bg">
+            <img (click)="navigateTo()" src="assets/images/MegaLogo.png" />
+          </div>
+        </div>
+        <app-language></app-language>
+      </div>
+      <div class="row">
+        <div class="col mx-auto mt-5 text-center">
+          <div class="popup mx-auto">
+            <h2 class="whattodo mb-0 aaaah-text">{{ "TITLE.AAAAHH" | translate }}</h2>
+            <h2 class="whattodo mb-2">
+              {{ "TITLE.SOMETHINGWANT" | translate }}
+            </h2>
+            <p class="heading4 hed3">{{ "TITLE.WEARE" | translate }}</p>
+
+            <img
+              class="img-fluid main-img-w360"
+              src="assets/images/aaaah.gif"
+              width="150px"
+            />
+
+            <p class="scanner-text font-weight-bold">
+              {{ "TITLE.PAPERJAM" | translate }}
+            </p>
+            <p class="scanner-text2">
+              {{ "TITLE.PLEASESEEK" | translate }}
+            </p>
+
+            <div class="back-next-btn mt-3">
+              <!-- <button type="button" class="btn btn-outline-info">
+                {{ "TITLE.BACK" | translate }}
+              </button> -->
+              <button type="button" class="btn btn-info">
+                {{ "TITLE.TRY-AGAIN" | translate }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

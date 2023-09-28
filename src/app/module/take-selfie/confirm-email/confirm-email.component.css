@@ -1,0 +1,60 @@
+.popup{
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 100px;
+}
+
+.email-img{
+    width: 20%;
+}
+
+.heading2 {
+    font-size: 4vw;
+    line-height: 5vw;
+    margin: 7vw 0vw;
+}
+
+.input-size{
+    font-size: 4vw!important;
+    height: 90px !important;
+    
+}
+
+
+.invalid-feedback {
+    font-size: 3vw;
+    margin-top: 4vw;
+}
+
+
+.back-next-btn{
+    margin-top: 9vw;
+}
+
+
+
+/* --- 150% ----- */
+@media (max-width:768px){
+
+}
+
+
+
+/* --- 125% ----- */
+@media (min-width:768px) and  (max-width:991px){
+
+}
+
+
+/* --- 100% ----- */
+@media (min-width:992px){
+
+    .input-size{
+        margin: 75px 0 !important;
+      }
+    .back-next-btn{
+        margin-top: 28vw;
+    }
+
+
+}
